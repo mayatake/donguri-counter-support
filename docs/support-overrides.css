@@ -1,0 +1,21 @@
+.shelf-end p {
+  color: #fff3d9;
+}
+
+.mobile-break {
+  display: none;
+}
+
+@media (max-width: 800px) {
+  .mobile-break {
+    display: inline;
+  }
+
+  .craft-title .sc-display--xl {
+    max-width: 10ch;
+  }
+
+  .craft-close h2 {
+    font-size: clamp(40px, 11vw, 52px);
+  }
+}
