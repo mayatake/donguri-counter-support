@@ -6,8 +6,16 @@
   display: none;
 }
 
+.faq-mobile-break {
+  display: none;
+}
+
 @media (max-width: 800px) {
   .mobile-break {
+    display: inline;
+  }
+
+  .faq-mobile-break {
     display: inline;
   }
 
