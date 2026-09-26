@@ -45,9 +45,10 @@ h1, h2 { font-family: var(--display); font-weight: 700; letter-spacing: -.045em;
 .hero-art { position: relative; width: min(100%, 390px); justify-self: center; margin: 0; filter: drop-shadow(0 28px 26px rgba(79, 54, 33, .17)); transform: rotate(1deg); }
 .hero-art img { width: 100%; aspect-ratio: 327 / 709; object-fit: cover; border-radius: 48% 48% 18px 18px; }
 .hero-note, .art-sticker { position: absolute; right: -20px; bottom: 10%; padding: 13px 18px; border: 1px solid rgba(69, 77, 58, .15); border-radius: 50%; background: var(--cream); color: var(--deep); font-family: var(--hand); font-size: 17px; transform: rotate(7deg); }
-.leaf { position: absolute; color: var(--rust); opacity: .5; font-size: 54px; animation: leaf-drift 7s ease-in-out infinite; }
-.leaf-one { top: 23%; right: 7%; }
-.leaf-two { left: 43%; bottom: 11%; font-size: 30px; animation-delay: -3s; }
+.leaf { position: absolute; width: 25px; height: 38px; border-radius: 0 90% 0 90%; background: var(--rust); opacity: .58; animation: leaf-drift 7s ease-in-out infinite; }
+.leaf::after { content: ''; position: absolute; left: 48%; top: 10%; width: 1px; height: 82%; background: rgba(255, 249, 237, .7); transform: rotate(-28deg); }
+.leaf-one { top: 23%; right: 7%; transform: rotate(20deg); }
+.leaf-two { left: 43%; bottom: 11%; width: 17px; height: 27px; animation-delay: -3s; }
 .scroll-cue { position: absolute; left: 50%; bottom: 20px; display: grid; gap: 8px; justify-items: center; color: var(--muted); font: 10px ui-monospace, monospace; letter-spacing: .18em; text-decoration: none; transform: translateX(-50%); }
 .scroll-cue span { width: 1px; height: 32px; background: var(--rust); transform-origin: top; animation: cue 1.7s ease-in-out infinite; }
 .count { min-height: 740px; display: grid; grid-template-columns: 1fr .78fr; align-items: center; gap: 10vw; padding: 120px clamp(24px, 12vw, 180px); background: var(--deep); color: var(--cream); }
@@ -83,11 +84,14 @@ h1, h2 { font-family: var(--display); font-weight: 700; letter-spacing: -.045em;
 .hill { position: absolute; bottom: -180px; width: 76vw; height: 330px; border-radius: 50% 50% 0 0; }
 .hill-back { left: -12%; background: #9eae88; transform: rotate(-5deg); }
 .hill-front { right: -16%; bottom: -220px; background: var(--moss); transform: rotate(5deg); }
-.tree { position: absolute; bottom: 75px; color: #62795c; font-size: clamp(90px, 16vw, 180px); line-height: 1; text-shadow: 0 13px 0 #715a3f; }
+.tree { position: absolute; bottom: 70px; width: 104px; height: 190px; }
+.tree::before { content: ''; position: absolute; left: 50%; bottom: 38px; width: 0; height: 0; border-left: 52px solid transparent; border-right: 52px solid transparent; border-bottom: 138px solid #62795c; transform: translateX(-50%); filter: drop-shadow(0 12px 0 rgba(113, 90, 63, .8)); }
+.tree::after { content: ''; position: absolute; left: 50%; bottom: 0; width: 19px; height: 55px; background: #715a3f; transform: translateX(-50%); }
 .tree-a { left: 13%; bottom: 100px; transform: scale(.85); }
-.tree-b { left: 41%; bottom: 40px; color: #49674e; transform: scale(1.25); }
-.tree-c { right: 12%; bottom: 110px; color: #758966; transform: scale(.75); }
-.tiny-squirrel { position: absolute; right: 28%; bottom: 48px; z-index: 1; display: grid; width: 48px; height: 48px; place-items: center; border-radius: 48% 52% 45% 45%; background: #c8753c; color: #f5d7ad; font-size: 22px; box-shadow: 9px 5px 0 -1px #c8753c; }
+.tree-b { left: 41%; bottom: 40px; transform: scale(1.25); z-index: 1; }
+.tree-b::before { border-bottom-color: #49674e; }
+.tree-c { right: 12%; bottom: 110px; transform: scale(.75); }
+.tree-c::before { border-bottom-color: #758966; }
 .return { min-height: 800px; display: grid; grid-template-columns: .76fr 1fr; align-items: center; gap: 10vw; padding: 120px clamp(24px, 12vw, 180px); background: #f4dfbe; }
 .return-art { width: min(330px, 100%); margin: 0 auto; filter: drop-shadow(0 24px 24px rgba(79, 54, 33, .16)); transform: rotate(-1deg); }
 .return-art img { width: 100%; aspect-ratio: 327 / 709; max-height: 610px; object-fit: cover; border-radius: 150px 150px 16px 16px; }
@@ -148,7 +152,6 @@ h1, h2 { font-family: var(--display); font-weight: 700; letter-spacing: -.045em;
   .tree-a { bottom: 70px; }
   .tree-b { bottom: 20px; }
   .tree-c { bottom: 78px; }
-  .tiny-squirrel { right: 24%; bottom: 24px; width: 38px; height: 38px; }
   .return { gap: 36px; }
   .return-art { width: min(66vw, 280px); grid-row: 2; }
   .return-copy { grid-row: 1; }
