@@ -79,3 +79,5 @@
 @media(max-width:390px){.app-step img{height:156px}}
 .hero-title-line{display:block;white-space:nowrap}
 @media(min-width:761px){.hero h1{font-size:clamp(42px,5vw,60px)}}
+.app-step--raised img{object-position:center 58%}
+@media(max-width:760px){.app-step--raised img{object-position:center 62%}}
