@@ -27,9 +27,9 @@
         <p>いつもの公園を、少しゆっくり歩いてみる。<br>小さな発見から始まる、森とのものがたり。</p>
         <a class="pill-button" href="#story">ものがたりを読む <span aria-hidden="true">↓</span></a>
       </div>
-      <img class="hero-mascot hero-mascot--master" src="motion-assets/master-acorn.png" alt="" aria-hidden="true">
-      <img class="hero-mascot hero-mascot--bird" src="motion-assets/bird.png" alt="" aria-hidden="true">
-      <img class="hero-mascot hero-mascot--squirrel" src="motion-assets/squirrel.png" alt="" aria-hidden="true">
+      <img class="hero-mascot hero-mascot--master" src="motion-assets/master-acorn.png" alt="" aria-hidden="true" data-peek="from-left">
+      <img class="hero-mascot hero-mascot--bird" src="motion-assets/bird.png" alt="" aria-hidden="true" data-peek="from-right">
+      <img class="hero-mascot hero-mascot--squirrel" src="motion-assets/squirrel.png" alt="" aria-hidden="true" data-peek="hop-right">
       <span class="hero-caption">森のどこかで、みんなが見てる。</span>
       <a class="scroll-mark" href="#story" aria-label="下へスクロール"><span></span></a>
     </section>
@@ -44,7 +44,7 @@
         <img src="pattern-1-portrait-camera.png" alt="どんぐりを撮影するアプリ画面のイメージ" loading="lazy" width="327" height="709">
         <figcaption>あった。ここに、ひとつ。</figcaption>
       </figure>
-      <img class="side-character side-character--rabbit" src="motion-assets/rabbit.png" alt="" aria-hidden="true" loading="lazy">
+      <img class="side-character side-character--rabbit" src="motion-assets/rabbit.png" alt="" aria-hidden="true" loading="lazy" data-peek="from-left">
       <span class="chapter-index">01</span>
     </section>
 
@@ -71,7 +71,7 @@
           <h3>数えて、返す</h3><p>数を確かめたら、見つけた場所の近くへ。</p>
         </article>
       </div>
-      <img class="app-squirrel" src="motion-assets/squirrel.png" alt="" aria-hidden="true" loading="lazy">
+      <img class="app-squirrel" src="motion-assets/squirrel.png" alt="" aria-hidden="true" loading="lazy" data-peek="from-right">
     </section>
 
     <section class="friends" id="friends" aria-labelledby="friends-title">
@@ -81,12 +81,15 @@
         <p>少し眠そうなクマ。どんぐりを気にしているリス。木の陰から見ているタヌキ。みんな、森の中で自分の一日を過ごしています。</p>
         <div class="friend-names"><span>クマ</span><span>リス</span><span>タヌキ</span><span>鳥</span><span>ハリネズミ</span></div>
       </div>
-      <figure class="friends-scene" data-reveal="from-right">
-        <img src="pattern-1-feeding-scene.png" alt="秋の公園でマスターどんぐりと森の仲間たちが過ごす場面" loading="lazy" width="1024" height="1536">
-        <figcaption>それぞれの場所から、そっと見守ってる。</figcaption>
-      </figure>
-      <img class="friend-pop friend-pop--owl" src="motion-assets/owl.png" alt="" aria-hidden="true" loading="lazy">
-      <img class="friend-pop friend-pop--hedgehog" src="motion-assets/hedgehog.png" alt="" aria-hidden="true" loading="lazy">
+      <div class="friends-stage" role="img" aria-label="森の風景に、仲間たちが順番に現れます">
+        <img class="friends-background" src="motion-assets/forest-clearing.jpg" alt="" aria-hidden="true" loading="lazy">
+        <img class="friend-actor friend-actor--bear" src="motion-assets/bear.png" alt="" aria-hidden="true" loading="lazy" data-peek="bear-in">
+        <img class="friend-actor friend-actor--squirrel" src="motion-assets/squirrel.png" alt="" aria-hidden="true" loading="lazy" data-peek="hop-in">
+        <img class="friend-actor friend-actor--tanuki" src="motion-assets/tanuki.png" alt="" aria-hidden="true" loading="lazy" data-peek="tanuki-in">
+        <img class="friend-actor friend-actor--bird" src="motion-assets/bird.png" alt="" aria-hidden="true" loading="lazy" data-peek="bird-in">
+        <img class="friend-actor friend-actor--hedgehog" src="motion-assets/hedgehog.png" alt="" aria-hidden="true" loading="lazy" data-peek="hedgehog-in">
+        <span class="forest-caption">それぞれの場所から、そっと見守ってる。</span>
+      </div>
     </section>
 
     <section class="look" aria-labelledby="look-title">
@@ -97,8 +100,6 @@
       </div>
       <figure class="look-scene" data-reveal>
         <img src="pattern-1-october-landscape.png" alt="秋の森と山、公園を歩く仲間たち" loading="lazy" width="1448" height="1086">
-        <img class="look-fox" src="motion-assets/fox.png" alt="" aria-hidden="true" loading="lazy">
-        <img class="look-butterfly" src="motion-assets/butterfly.png" alt="" aria-hidden="true" loading="lazy">
       </figure>
       <p class="look-note" data-reveal>急がないで歩くと、見えるものが増えてくる。</p>
     </section>
@@ -111,7 +112,7 @@
         <p>どんぐりは、森の仲間たちの食べものや、次の芽吹きにつながるもの。見つけた場所の近くへ戻してあげよう。</p>
         <p class="promise-note">公園の自然を、みんなで大切に。</p>
       </div>
-      <img class="return-tanuki" src="motion-assets/tanuki.png" alt="" aria-hidden="true" loading="lazy">
+      <img class="return-tanuki" src="motion-assets/tanuki.png" alt="" aria-hidden="true" loading="lazy" data-peek="from-right">
     </section>
 
     <section class="closing" aria-labelledby="closing-title">
@@ -123,7 +124,7 @@
         <a class="pill-button pill-button--light" href="index.html">サポートページへ <span aria-hidden="true">↗</span></a>
       </div>
       <div class="closing-friends" aria-hidden="true">
-        <img src="motion-assets/bird.png" alt="" loading="lazy"><img src="motion-assets/hedgehog.png" alt="" loading="lazy"><img src="motion-assets/bear.png" alt="" loading="lazy"><img src="motion-assets/master-acorn.png" alt="" loading="lazy">
+        <img src="motion-assets/bird.png" alt="" loading="lazy" data-peek="from-left"><img src="motion-assets/hedgehog.png" alt="" loading="lazy" data-peek="from-left"><img src="motion-assets/bear.png" alt="" loading="lazy" data-peek="from-right"><img src="motion-assets/master-acorn.png" alt="" loading="lazy" data-peek="from-right">
       </div>
     </section>
   </main>
