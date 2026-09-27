@@ -4,80 +4,76 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <meta name="theme-color" content="#f5ead6">
-  <title>どんぐりを見つけたら、森へ返そう｜どんぐりカウンター</title>
-  <meta name="description" content="マスターどんぐりと森の仲間たちと、見つけたどんぐりを数えて元の場所へ。自然や公園を大切にする、どんぐりカウンターの案内です。">
-  <link rel="canonical" href="https://nariyukipdm.github.io/donguri-counter-support/landing-motion-2.html">
-  <meta http-equiv="refresh" content="0;url=landing-motion-2.html">
+  <meta name="description" content="どんぐりを見つけたら、森の仲間に教えよう。見つけて、数えて、元の場所へ。マスターどんぐりと森を歩く、どんぐりカウンターの公式ランディングページです。">
+  <title>どんぐりを見つけたら、森の仲間に教えよう。｜どんぐりカウンター</title>
+  <link rel="canonical" href="https://nariyukipdm.github.io/donguri-counter-support/landing.html">
   <link rel="icon" href="pattern-1-acorn-icon.png">
-  <link rel="stylesheet" href="landing.css">
+  <link rel="stylesheet" href="landing-motion-2.css">
+  <script defer src="landing-motion-2.js"></script>
 </head>
 <body>
   <a class="skip-link" href="#main">本文へ</a>
-  <header class="landing-header">
-    <a class="brand" href="landing.html"><img src="pattern-1-acorn-icon.png" width="36" height="36" alt=""><span>どんぐりカウンター</span></a>
-    <nav aria-label="ページ内メニュー"><a href="#story">ものがたり</a><a href="#promise">森との約束</a><a href="landing-motion-2.html">動きのあるデモ2</a><a class="nav-support" href="index.html">サポート</a></nav>
+  <header class="topbar">
+    <a class="brand" href="#top"><img src="pattern-1-acorn-icon.png" alt="" width="36" height="36"><span>どんぐりカウンター</span></a>
+    <nav aria-label="関連ページ"><a href="index.html">サポート</a><a href="privacy.html">プライバシーポリシー</a></nav>
   </header>
 
   <main id="main">
-    <section class="hero chapter" id="top" aria-labelledby="hero-title">
+    <section class="hero" id="top">
+      <img class="hero-landscape" src="motion-assets/hero-woods.jpg" alt="落ち葉の小道が森の向こうへ続く、秋の公園" fetchpriority="high">
+      <div class="hero-shade"></div>
       <div class="hero-copy" data-reveal>
-        <p class="eyebrow">みつける・かぞえる・もどす</p>
-        <h1 id="hero-title">どんぐりを見つけたら、<br><span>森へ返そう。</span></h1>
-        <p class="hero-lede">マスターどんぐりと森の仲間たちと、いつもの公園をもう少し好きになる。</p>
-        <a class="button button-dark" href="#story">森の案内を読む <span aria-hidden="true">↓</span></a>
+        <p class="eyebrow">みつける · かぞえる · もどす</p>
+        <h1><span class="hero-title-line">どんぐりを見つけたら、</span><span class="hero-title-line">森の仲間に教えよう。</span></h1>
+        <p>いつもの公園を、少しゆっくり歩いてみる。<br>小さな発見から始まる、森とのものがたり。</p>
+        <a class="pill-button" href="#story">ものがたりを読む <span aria-hidden="true">↓</span></a>
       </div>
-      <figure class="hero-art" data-reveal="from-right">
-        <img src="pattern-1-portrait-home.png" alt="秋色の木の家で、ジト目のマスターどんぐりがこちらを見ている" width="327" height="709">
-        <span class="hero-note">きょうは、どこで見つけた？</span>
-      </figure>
-      <span class="leaf leaf-one" aria-hidden="true"></span><span class="leaf leaf-two" aria-hidden="true"></span>
-      <a class="scroll-cue" href="#story"><span></span>SCROLL</a>
+      <img class="hero-mascot hero-mascot--master" src="motion-assets/master-acorn.png" alt="" aria-hidden="true" data-peek="from-left">
+      <img class="hero-mascot hero-mascot--bird" src="motion-assets/bird.png" alt="" aria-hidden="true" data-peek="from-right">
+      <img class="hero-mascot hero-mascot--squirrel" src="motion-assets/squirrel.png" alt="" aria-hidden="true" data-peek="hop-right">
+      <span class="hero-caption">森のどこかで、みんなが見てる。</span>
+      <a class="scroll-mark" href="#story" aria-label="下へスクロール"><span></span></a>
     </section>
 
-    <section class="chapter count" id="story" aria-labelledby="count-title">
-      <div class="chapter-copy" data-reveal>
-        <p class="eyebrow">01 — みつける</p>
-        <h2 id="count-title">公園の足もとに、<br>小さな発見。</h2>
-        <p>落ち葉のそば、木の根元。いつもの道にも、まだ気づいていないものがある。見つけたら、まずは一枚撮ってみよう。</p>
+    <section class="chapter discovery" id="story" aria-labelledby="discovery-title">
+      <div class="chapter-text" data-reveal><p class="eyebrow">01 — みつける</p><h2 id="discovery-title">足もとに、<br>小さな発見。</h2><p>落ち葉のそば、木の根元。いつもの道にも、まだ気づいていないものがある。見つけたら、まずは一枚撮ってみよう。</p></div>
+      <figure class="phone-art" data-reveal="from-right"><img src="pattern-1-portrait-camera.png" alt="どんぐりを撮影するアプリ画面のイメージ" loading="lazy" width="327" height="709"><figcaption>あった。ここに、ひとつ。</figcaption></figure>
+      <img class="side-character side-character--rabbit" src="motion-assets/rabbit.png" alt="" aria-hidden="true" loading="lazy" data-peek="from-left"><span class="chapter-index">01</span>
+    </section>
+
+    <section class="app-story" id="app" aria-labelledby="app-title">
+      <div class="app-heading" data-reveal><p class="eyebrow">02 — かぞえる</p><h2 id="app-title">見つけた数を、<br>森の記録に。</h2><p>むずかしい操作はいりません。撮って、確かめて、マスターどんぐりに預けよう。</p></div>
+      <div class="app-flow">
+        <article class="app-step" data-reveal><span class="step-number">1</span><img src="pattern-1-portrait-home.png" alt="マスターどんぐりが迎えるアプリのホーム画面" loading="lazy" width="327" height="709"><h3>森へ出かける</h3><p>マスターどんぐりと、今日の探検へ。</p></article>
+        <article class="app-step app-step--raised" data-reveal><span class="step-number">2</span><img src="pattern-1-portrait-camera.png" alt="カメラでどんぐりを撮影する画面" loading="lazy" width="327" height="709"><h3>写真を撮る</h3><p>見つけたどんぐりを画面におさめる。</p></article>
+        <article class="app-step" data-reveal><span class="step-number">3</span><img src="pattern-1-portrait-return.png" alt="どんぐりを元の場所へ戻す場面のアプリ画面" loading="lazy" width="327" height="709"><h3>数えて、返す</h3><p>数を確かめたら、見つけた場所の近くへ。</p></article>
       </div>
-      <figure class="count-art" data-reveal="from-right"><img src="pattern-1-portrait-camera.png" alt="秋の公園の落ち葉の中に、どんぐりがいくつも落ちている" loading="lazy" width="327" height="709"><span class="art-sticker">あった！</span></figure>
+      <img class="app-squirrel" src="motion-assets/squirrel.png" alt="" aria-hidden="true" loading="lazy" data-peek="from-right">
     </section>
 
-    <section class="chapter steps" aria-labelledby="steps-title">
-      <div class="steps-heading" data-reveal><p class="eyebrow">02 — かぞえる</p><h2 id="steps-title">見つけた数を、<br>森の記録に。</h2><p>むずかしい操作はいりません。マスターどんぐりがいっしょに数えます。</p></div>
-      <ol class="step-list">
-        <li data-reveal><span class="step-mark">1</span><div><h3>写真を撮る</h3><p>どんぐりを撮影枠に入れて、シャッター。</p></div></li>
-        <li data-reveal><span class="step-mark">2</span><div><h3>数を確かめる</h3><p>認識された数を見て、撮影したものを確認。</p></div></li>
-        <li data-reveal><span class="step-mark">3</span><div><h3>記録にあずける</h3><p>見つけた数が、アプリの中に残ります。</p></div></li>
-      </ol>
-      <span class="floating-acorn" aria-hidden="true"><img src="pattern-1-acorn-icon.png" alt=""></span>
+    <section class="friends" id="friends" aria-labelledby="friends-title">
+      <div class="friends-copy" data-reveal><p class="eyebrow">03 — なかまに会う</p><h2 id="friends-title">森には、<br>それぞれの暮らし。</h2><p>少し眠そうなクマ。どんぐりを気にしているリス。木の陰から見ているタヌキ。みんな、森の中で自分の一日を過ごしています。</p><div class="friend-names"><span>クマ</span><span>リス</span><span>タヌキ</span><span>鳥</span><span>ハリネズミ</span></div></div>
+      <div class="friends-stage" role="img" aria-label="森の風景に、仲間たちが順番に現れます"><img class="friends-background" src="motion-assets/forest-clearing.jpg" alt="" aria-hidden="true" loading="lazy"><img class="friend-actor friend-actor--bear" src="motion-assets/bear.png" alt="" aria-hidden="true" loading="lazy" data-peek="bear-in"><img class="friend-actor friend-actor--squirrel" src="motion-assets/squirrel.png" alt="" aria-hidden="true" loading="lazy" data-peek="hop-in"><img class="friend-actor friend-actor--tanuki" src="motion-assets/tanuki.png" alt="" aria-hidden="true" loading="lazy" data-peek="tanuki-in"><img class="friend-actor friend-actor--bird" src="motion-assets/bird.png" alt="" aria-hidden="true" loading="lazy" data-peek="bird-in"><img class="friend-actor friend-actor--hedgehog" src="motion-assets/hedgehog.png" alt="" aria-hidden="true" loading="lazy" data-peek="hedgehog-in"><span class="forest-caption">それぞれの場所から、そっと見守ってる。</span></div>
     </section>
 
-    <section class="friends chapter" aria-labelledby="friends-title">
-      <div class="friends-copy" data-reveal><p class="eyebrow">03 — なかまに会う</p><h2 id="friends-title">森には、<br>それぞれの暮らし。</h2><p>少し眠そうなクマ。どんぐりを気にしているリス。木の陰から見ているタヌキ。みんな、森の中で自分の一日を過ごしています。</p></div>
-      <figure class="friends-art" data-reveal="from-right"><img src="pattern-1-feeding-scene.png" alt="秋の公園で、ジト目のクマ、リス、タヌキがマスターどんぐりと過ごしている" loading="lazy" width="1024" height="1536"><figcaption>クマも、リスも、タヌキも。森のいつもの仲間たち。</figcaption></figure>
-      <div class="friend-tags" aria-label="登場する仲間"><span>マスターどんぐり</span><span>クマ</span><span>リス</span><span>タヌキ</span></div>
+    <section class="look" aria-labelledby="look-title">
+      <div class="look-copy" data-reveal><p class="eyebrow">04 — 森を見る</p><h2 id="look-title">数えたら、<br>景色も見てみよう。</h2><p>木の根元や落ち葉の下。どんぐりがあった場所には、森の時間が流れています。季節が変わると、出会う景色や仲間も少しずつ変わります。</p></div>
+      <figure class="look-scene" data-reveal><img src="pattern-1-october-landscape.png" alt="秋の森と山、公園を歩く仲間たち" loading="lazy" width="1448" height="1086"></figure><p class="look-note" data-reveal>急がないで歩くと、見えるものが増えてくる。</p>
     </section>
 
-    <section class="look chapter" aria-labelledby="look-title">
-      <p class="eyebrow" data-reveal>04 — 森を見る</p>
-      <h2 id="look-title" data-reveal>数えたら、<br>景色も見てみよう。</h2>
-      <p class="look-text" data-reveal>木の根元や落ち葉の下。どんぐりがあった場所には、森の時間が流れています。季節が変わると、出会う景色や仲間も少しずつ変わります。</p>
-      <figure class="look-art" data-reveal="from-right"><img src="pattern-1-october-landscape.png" alt="秋の森と山を背景に、マスターどんぐり、クマ、リス、タヌキが集まっている" loading="lazy" width="1448" height="1086"><figcaption>季節が変わると、森の景色も少しずつ変わる。</figcaption></figure>
-    </section>
-
-    <section class="return chapter" id="promise" aria-labelledby="return-title">
-      <figure class="return-art" data-reveal="from-left"><img src="pattern-1-portrait-return.png" alt="マスターどんぐりが、秋の木の根元へどんぐりを戻している" loading="lazy" width="327" height="709"></figure>
+    <section class="return" aria-labelledby="return-title">
+      <figure class="return-art" data-reveal="from-left"><img src="pattern-1-portrait-return.png" alt="マスターどんぐりが、木の根元へどんぐりを戻す場面" loading="lazy" width="327" height="709"></figure>
       <div class="return-copy" data-reveal><p class="eyebrow">05 — 元の場所へ</p><h2 id="return-title">数えたあとは、<br>森へ返そう。</h2><p>どんぐりは、森の仲間たちの食べものや、次の芽吹きにつながるもの。見つけた場所の近くへ戻してあげよう。</p><p class="promise-note">公園の自然を、みんなで大切に。</p></div>
+      <img class="return-tanuki" src="motion-assets/tanuki.png" alt="" aria-hidden="true" loading="lazy" data-peek="from-right">
     </section>
 
-    <section class="closing chapter" aria-labelledby="closing-title">
-      <figure class="closing-art" data-reveal><img src="pattern-1-landscape-done.png" alt="マスターどんぐり、クマ、リス、タヌキが芽吹いたどんぐりのそばに集まっている" loading="lazy" width="576" height="432"></figure>
-      <div class="closing-copy" data-reveal><p class="eyebrow">06 — また森で</p><h2 id="closing-title">ありがとう。<br>また会おうね。</h2><p>見つけた場所へ返したら、今日の探検はおしまい。また季節が変わったころに。</p><a class="button button-light" href="index.html">アプリのサポートを見る <span aria-hidden="true">↗</span></a></div>
+    <section class="closing" aria-labelledby="closing-title">
+      <figure class="closing-scene" data-reveal><img src="pattern-1-landscape-done.png" alt="芽吹いたどんぐりのそばに集まるマスターどんぐりと仲間たち" loading="lazy" width="576" height="432"></figure>
+      <div class="closing-copy" data-reveal><p class="eyebrow">06 — また森で</p><h2 id="closing-title">ありがとう。<br>また会おうね。</h2><p>見つけた場所へ返したら、今日の探検はおしまい。また季節が変わったころに。</p><a class="pill-button pill-button--light" href="index.html">サポートページへ <span aria-hidden="true">↗</span></a></div>
+      <div class="closing-friends" aria-hidden="true"><img src="motion-assets/bird.png" alt="" loading="lazy" data-peek="from-left"><img src="motion-assets/hedgehog.png" alt="" loading="lazy" data-peek="from-left"><img src="motion-assets/bear.png" alt="" loading="lazy" data-peek="from-right"><img src="motion-assets/master-acorn.png" alt="" loading="lazy" data-peek="from-right"></div>
     </section>
   </main>
 
-  <footer class="landing-footer"><a class="brand" href="#top"><img src="pattern-1-acorn-icon.png" width="30" height="30" alt=""><span>どんぐりカウンター</span></a><div><a href="privacy.html">プライバシーポリシー</a><a href="index.html">サポート</a><a href="https://github.com/nariyukiPdM" rel="noopener noreferrer">開発：ナリユキPdM</a></div></footer>
-  <script src="landing.js" defer></script>
+  <footer class="footer"><a class="brand" href="#top"><img src="pattern-1-acorn-icon.png" alt="" width="30" height="30"><span>どんぐりカウンター</span></a><div><a href="privacy.html">プライバシーポリシー</a><a href="index.html">サポート</a></div></footer>
 </body>
 </html>
