@@ -73,8 +73,9 @@
 .phone-art img{clip-path:inset(0 2px 0 0 round 155px 155px 18px 18px)}
 .return-art img{border-radius:24px;clip-path:inset(0 2px 0 0 round 24px)}
 @media(max-width:760px){
-  .hero h1{font-size:clamp(26px,8vw,46px);line-height:1.4}
+  .hero h1{font-size:clamp(25px,7.8vw,44px);line-height:1.4}
   .app-step img{height:170px;object-fit:cover}
 }
 @media(max-width:390px){.app-step img{height:156px}}
-@media(min-width:761px){.hero h1{font-size:clamp(42px,5vw,64px)}}
+.hero-title-line{display:block;white-space:nowrap}
+@media(min-width:761px){.hero h1{font-size:clamp(42px,5vw,60px)}}
