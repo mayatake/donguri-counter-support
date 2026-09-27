@@ -41,6 +41,7 @@
 .forest-caption{position:absolute;z-index:3;right:18px;top:16px;padding:9px 14px;border-radius:999px;background:rgba(255,249,237,.9);color:var(--deep);font:14px var(--hand)}
 .look-fox,.look-butterfly{display:none}
 .return-art{width:min(390px,100%)}
+@media(min-width:761px){.return{grid-template-columns:minmax(320px,1fr) minmax(0,1fr);gap:clamp(32px,6vw,90px)}}
 .return-art img{height:auto;max-height:none;aspect-ratio:327/709;object-fit:contain;border-radius:0}
 .return-tanuki{animation:none}
 .closing-friends img{animation:none}
@@ -62,7 +63,6 @@
 .has-scroll-motion .friend-actor--tanuki:not(.is-peeking){transform:translateX(125%) rotate(5deg) scale(.94)}
 .has-scroll-motion .friend-actor--bird:not(.is-peeking){transform:translateX(-140%) rotate(-9deg)}
 .has-scroll-motion .friend-actor--squirrel:not(.is-peeking){transform:translateX(-145%) scale(.84)}
-.friend-actor--bird{transition-delay:0ms}.friend-actor--bear{transition-delay:140ms}.friend-actor--squirrel{transition-delay:280ms}.friend-actor--hedgehog{transition-delay:420ms}.friend-actor--tanuki{transition-delay:560ms}
 .friend-actor--tanuki.is-peeking,.friend-actor--bird.is-peeking{opacity:1}
 .hero-mascot[data-peek="hop-right"]{--peek-start:110%}
 .hero-mascot.is-peeking,.side-character.is-peeking,.app-squirrel.is-peeking,.return-tanuki.is-peeking{opacity:1}

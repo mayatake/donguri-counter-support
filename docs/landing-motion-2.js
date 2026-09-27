@@ -27,5 +27,24 @@
       activeObserver.unobserve(entry.target);
     });
   }, { threshold: 0.12, rootMargin: '0px 0px -14% 0px' });
-  peeks.forEach((item) => peekObserver.observe(item));
+  peeks.forEach((item) => {
+    if (!item.closest('.friends-stage')) peekObserver.observe(item);
+  });
+
+  const friendOrder = ['bird', 'bear', 'squirrel', 'hedgehog', 'tanuki'];
+  const actorName = (actor) => Array.from(actor.classList)
+    .find((className) => className.startsWith('friend-actor--'))
+    ?.slice('friend-actor--'.length) ?? '';
+  const stageObserver = new IntersectionObserver((entries, activeObserver) => {
+    entries.forEach((entry) => {
+      if (!entry.isIntersecting) return;
+      const actors = Array.from(entry.target.querySelectorAll('.friend-actor'));
+      actors.sort((a, b) => friendOrder.indexOf(actorName(a)) - friendOrder.indexOf(actorName(b)));
+      actors.forEach((actor, index) => {
+        window.setTimeout(() => actor.classList.add('is-peeking'), index * 240);
+      });
+      activeObserver.unobserve(entry.target);
+    });
+  }, { threshold: 0.18, rootMargin: '0px 0px -12% 0px' });
+  document.querySelectorAll('.friends-stage').forEach((stage) => stageObserver.observe(stage));
 })();
