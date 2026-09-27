@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f5ecd9">
+  <meta name="description" content="どんぐりカウンターのスクロール演出版プロトタイプ。マスターどんぐりと森の仲間たちが、森をめぐります。">
+  <title>森をめぐる — スクロール演出プロトタイプ | どんぐりカウンター</title>
+  <link rel="stylesheet" href="scrollcraft.css">
+  <link rel="stylesheet" href="landing-motion.css">
+  <script defer src="scrollcraft.js"></script>
+  <script defer src="landing-motion.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#journey">物語を読む</a>
+  <header class="motion-header">
+    <a class="brand" href="landing.html" aria-label="どんぐりカウンターのランディングページへ戻る">
+      <img src="pattern-1-acorn-icon.png" alt="" width="42" height="36">
+      <span>どんぐりカウンター</span>
+    </a>
+    <a class="header-link" href="landing.html">LP本編へ戻る ↗</a>
+  </header>
+
+  <main>
+    <section class="motion-intro" aria-labelledby="motion-title">
+      <p class="eyebrow">SCROLLCRAFT EXPERIMENT / 01</p>
+      <h1 id="motion-title">森をめぐる、<br>ひとつの物語。</h1>
+      <p>スクロールに合わせて、マスターどんぐりが歩きます。<br class="desktop-break">森の仲間も、少し遅れて顔を出します。</p>
+      <a class="start-link" href="#journey">森へ入る <span aria-hidden="true">↓</span></a>
+      <img class="intro-master" src="motion-assets/master-acorn.png" alt="" aria-hidden="true">
+    </section>
+
+    <section class="journey" id="journey" data-sc-act="pin" data-sc-span="6.2" data-sc-dwell="0.12" aria-label="スクロールで進む森の物語">
+      <div class="journey-stage" data-sc-stage aria-hidden="true">
+        <div class="sky"></div>
+        <div class="sun"></div>
+        <div class="far-hills"></div>
+        <div class="tree tree--left"><i></i><b></b></div>
+        <div class="tree tree--right"><i></i><b></b></div>
+        <div class="canopy canopy--one"></div>
+        <div class="canopy canopy--two"></div>
+        <div class="ground"></div>
+        <div class="root root--one"></div>
+        <div class="root root--two"></div>
+
+        <div class="actor actor--master" data-actor="master"><img src="motion-assets/master-acorn.png" alt=""></div>
+        <div class="actor actor--bear" data-actor="bear"><img src="motion-assets/bear.png" alt=""></div>
+        <div class="actor actor--squirrel" data-actor="squirrel"><img src="motion-assets/squirrel.png" alt=""></div>
+        <div class="actor actor--tanuki" data-actor="tanuki"><img src="motion-assets/tanuki.png" alt=""></div>
+        <div class="actor actor--bird" data-actor="bird"><img src="motion-assets/bird.png" alt=""></div>
+        <div class="actor actor--hedgehog" data-actor="hedgehog"><img src="motion-assets/hedgehog.png" alt=""></div>
+
+        <div class="story-copy story-copy--one" data-sc-cue="0.00 0.19" data-sc-rise="0">
+          <p class="eyebrow">01 — みつける</p><h2>森で、<br>ひとつ見つけた。</h2>
+          <p>いつもの公園にも、小さな発見が待っている。</p>
+        </div>
+        <div class="story-copy story-copy--two" data-sc-cue="0.17 0.37" data-sc-rise="0">
+          <p class="eyebrow">02 — かぞえる</p><h2>写真を撮って、<br>数をたしかめる。</h2>
+          <p>見つけた数を、マスターどんぐりと記録しよう。</p>
+        </div>
+        <div class="story-copy story-copy--three" data-sc-cue="0.35 0.56" data-sc-rise="0">
+          <p class="eyebrow">03 — なかまに会う</p><h2>じっと見ている、<br>森の仲間たち。</h2>
+          <p>クマ、リス、タヌキ。鳥や小さな仲間も、少し遅れてやってくる。</p>
+        </div>
+        <div class="story-copy story-copy--four" data-sc-cue="0.54 0.73" data-sc-rise="0">
+          <p class="eyebrow">04 — 森を見る</p><h2>ひとつ見つけると、<br>景色が変わる。</h2>
+          <p>木の根元や落ち葉の下。目を向ける先が、少しずつ増えていく。</p>
+        </div>
+        <div class="story-copy story-copy--five" data-sc-cue="0.71 0.90" data-sc-rise="0">
+          <p class="eyebrow">05 — 元の場所へ</p><h2>数えたあとは、<br>森へ返そう。</h2>
+          <p>どんぐりは森の仲間のごはん。見つけた場所の近くへ戻そう。</p>
+        </div>
+        <div class="story-copy story-copy--six" data-sc-cue="0.88 1.00" data-sc-rise="0">
+          <p class="eyebrow">06 — また森で</p><h2>ありがとう。<br>また会おうね。</h2>
+          <p>公園の自然を大切にしながら、次の発見へ。</p>
+        </div>
+        <div class="chapter-indicator"><span data-current-chapter>01</span><span class="indicator-rule"></span><span>06</span></div>
+        <p class="stage-hint">SCROLL TO WANDER</p>
+      </div>
+      <ol class="sr-only">
+        <li>見つける — 森で、ひとつ見つけた。</li>
+        <li>数える — 写真を撮って、数をたしかめる。</li>
+        <li>仲間に会う — じっと見ている、森の仲間たち。</li>
+        <li>森を見る — ひとつ見つけると、景色が変わる。</li>
+        <li>元の場所へ — 数えたあとは、森へ返そう。</li>
+        <li>また森で — ありがとう。また会おうね。</li>
+      </ol>
+    </section>
+
+    <section class="motion-outro" aria-labelledby="outro-title">
+      <p class="eyebrow">THE END — AND A NEW BEGINNING</p>
+      <h2 id="outro-title">次のどんぐりを、<br>森で見つけに行こう。</h2>
+      <a class="outro-link" href="landing.html">どんぐりカウンターについて <span aria-hidden="true">→</span></a>
+      <a class="support-link" href="index.html">サポートページ</a>
+    </section>
+  </main>
+  <footer class="motion-footer"><span>どんぐりカウンター</span><span>スクロール演出の試作ページ</span></footer>
+</body>
+</html>
