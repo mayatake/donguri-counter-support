@@ -70,3 +70,5 @@
 .has-scroll-motion [data-reveal="from-right"]{transform:translate(38px,18px)}
 .has-scroll-motion [data-reveal="from-left"]{transform:translate(-38px,18px)}
 .has-scroll-motion [data-reveal].is-visible{opacity:1;transform:translate(0,0)}
+.phone-art img{clip-path:inset(0 2px 0 0 round 155px 155px 18px 18px)}
+.return-art img{border-radius:24px;clip-path:inset(0 2px 0 0 round 24px)}
